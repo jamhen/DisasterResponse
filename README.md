@@ -1,9 +1,11 @@
 # Disaster Response Pipeline Project
 ### Introduction
-In this Project we would be analysing message data for disaster reponse. We perform ETL (Extract transform Load) on the data then build a pipline to process the data, then use a Machine Learning algorithm, supervised learning model, to predict the results. The messages used in this data set where taken from [Figure Eight](https://www.figure-eight.com/).
-
+In this Project we would be analysing message data for disaster reponse. We perform ETL (Extract transform Load) on the data then build a pipline to process the data, then use a Machine Learning algorithm, supervised learning model, to predict the results. The messages used in this data set where taken from [Figure Eight](https://www.figure-eight.com/). 
+The project includes a web app that would help emergency workers can input new disaster messages and get classifications results on different categories of the messages that will help them respond to disaster messages.
 ### Motivation
-This project is as a result of the growing aweaness of natural disasters occuring around and the manner in which emergency service companies respond to messages they receive concerning the disaster. The project includes a web app that would help emergency workers can input new disaster messages and get classifications results on different categories of the messages that will help them respond to disaster messages.
+Following a dissaster we can get millions of communications either direct, by social media or from the news right at the time when disaster response organisations have the least capacity to filter and pull out the messages which are most important. not every message might be relavant to disaster response professionals. So different organisations reponse to take care of different parts of the disaster problem, some cane take care of food, some water, medical aid; and so on.
+
+Thus supervised machine learning based approaches would be of good assistance to search for keywords more accurately in a message and predict which disiaster response is needed. Another drive for this project is to see how acurate we can use machine learning models that can help us to respond to future disasters.
 
 ### Files
 * disaster_messages.csv: File containing messages data from different from different sources on disasters
