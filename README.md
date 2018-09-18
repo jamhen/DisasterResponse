@@ -1,11 +1,12 @@
 # Disaster Response Pipeline Project
 ### Introduction
-In this Project we would be analysing message data for disaster reponse. We perform ETL (Extract transform Load) on the data then build a pipline to process the data, then use a Machine Learning algorithm, supervised learning model, to predict the results. The messages used in this data set where taken from [Figure Eight](https://www.figure-eight.com/). 
-The project includes a web app that would help emergency workers can input new disaster messages and get classifications results on different categories of the messages that will help them respond to disaster messages.
-### Motivation
-Following a dissaster we can get millions of communications either direct, by social media or from the news right at the time when disaster response organisations have the least capacity to filter and pull out the messages which are most important. not every message might be relavant to disaster response professionals. So different organisations reponse to take care of different parts of the disaster problem, some cane take care of food, some water, medical aid; and so on.
+In this Project, we would be analyzing message data for disaster response. We perform ETL (Extract Transform Load) on the data then build a pipeline to process the data, then use a Machine Learning algorithm, supervised learning model, to predict the results. The messages used in this dataset were taken from [Figure Eight](https://www.figure-eight.com/). 
+The project includes a web app that would help emergency workers can input a new message concerning a disaster and get classifications results for different responses needed based on the message.
 
-Thus supervised machine learning based approaches would be of good assistance to search for keywords more accurately in a message and predict which disiaster response is needed. Another drive for this project is to see how acurate we can use machine learning models that can help us to respond to future disasters.
+### Motivation
+Following a disaster, we can get millions of communications either direct, by social media or from the news, right at the time when disaster response organizations have the least capacity to filter and pull out the messages which are most important. Also, not every message might be relevant to disaster response professionals since different organizations take care of different parts of the disaster problem, some can take care of food, some water, medical aid; and so on.
+
+Thus supervised machine learning based approaches would be of good assistance to accurately search for keywords in a message and predict which disaster response is needed. Another drive for this project is to see how accurate we can use machine learning models that can help us to respond to future disasters.
 
 ### Files
 * disaster_messages.csv: File containing messages data from different from different sources on disasters
