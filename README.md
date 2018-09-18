@@ -3,7 +3,7 @@
 In this Project we would be analysing message data for disaster reponse. We perform ETL (Extract transform Load) on the data then build a pipline to process the data, then use a Machine Learning algorithm, supervised learning model, to predict the results. The messages used in this data set where taken from [Figure Eight](https://www.figure-eight.com/).
 
 ### Motivation
-The project includes a web app that would help emergency workers can input new disaster messages and get classifications results on different categories of the messages that will help them respond to desisaster messages.
+This project is as a result of the growing aweaness of natural disasters occuring around and the manner in which emergency service companies respond to messages they recieve. The project includes a web app that would help emergency workers can input new disaster messages and get classifications results on different categories of the messages that will help them respond to disaster messages.
 
 ### Files
 * disaster_messages.csv: File containing messages data from different from different sources on disasters
