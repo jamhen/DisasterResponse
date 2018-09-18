@@ -9,9 +9,7 @@ The project includes a web app that would help emergency workers can input new d
 * disaster_messages.csv: File containing messages data from different from different sources on disasters
 * disaster_categories.csv: File containing labels of disaster response categories.
 * process_data.py: File to prepare the the data contained in disaster_messages.csv and disaster_categories.
-* DisasterResponse.db: Database file for processed data.
 * train_classifier.py: File to train a model to classify messages.
-* classifier.plk: Saved model.
 * run.py: Run web app to analyse message and display predictions.
 * master.html: Web file to display results
 * go.html: Web file to display results.
