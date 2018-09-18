@@ -36,4 +36,4 @@ General Public Licence v3.0
 ### Useful Links
 1. [Ploty Bar Charts](https://plot.ly/python/bar-charts/)
 2. [Sci-kit Learn MultiOutputClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputClassifier.html)
-3. [Figure Eight]()
+3. [Figure Eight](https://www.figure-eight.com/data-for-everyone)
