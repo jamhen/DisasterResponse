@@ -91,7 +91,7 @@ def index():
             'layout': {
                 'title': "Distribution of Weather Related messages with Genre",
                 'yaxis': {
-                    'title':"Weather Message Count"
+                    'title':"Weather Messages Count"
                 },
                 'xaxis': {
                     'title': "Genre"
