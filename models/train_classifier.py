@@ -11,14 +11,12 @@ from sqlalchemy import create_engine
 import re
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from nltk import pos_tag
 from nltk.stem import WordNetLemmatizer
 
 from sklearn.pipeline import Pipeline
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
@@ -32,7 +30,7 @@ def load_data(database_filepath):
     df = pd.read_sql_table('DisasterTable', engine)
     X = df.message.values
     Y = df.iloc[:, 4:].values
-    category_names = (df.iloc[:,4:].columns).tolist()
+    category_names = (df.columns[4:]).tolist()
     return X, Y, category_names
 
 
