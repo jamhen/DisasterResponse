@@ -18,6 +18,7 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
@@ -71,6 +72,14 @@ def evaluate_model(model, X_test, Y_test, category_names):
     y_pred = model.predict(X_test)
     print(classification_report(Y_test, y_pred, 
                                 target_names=category_names))
+    # put test labels and predictions in pandas DataFrames
+    test_df = pd.DataFrame(y_test, columns=target_names)
+    preds_df = pd.DataFrame(y_pred, columns=target_names)
+    
+    # print accuracy score for each category
+    for category in target_names:
+        accuracy = accuracy_score(test_df[category], preds_df[category])
+        print("Accuracy score for {}: {:.3f} ".format(category, accuracy))
     return
 
 
