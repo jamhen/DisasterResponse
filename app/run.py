@@ -48,7 +48,7 @@ def index():
     related_category0 =[ df.loc[df['weather_related']==0].loc[df['genre']=='direct'].count()['message'], 
                          df.loc[df['weather_related']==0].loc[df['genre']=='news'].count()['message'], 
                          df.loc[df['weather_related']==0].loc[df['genre']=='social'].count()['message']]
-    
+
     categories = df.columns[4:].tolist()
     received_msgs = df.iloc[:, 4:].sum().tolist()
 
@@ -92,15 +92,16 @@ def index():
             ],
 
             'layout': {
-                'title': "Distribution of Weather Related Messages with Genre",
+                'title': "Distribution of Weather Related messages with Genre",
                 'yaxis': {
-                    'title':"Weather Messages Count"
+                    'title':"Weather Message Count"
                 },
                 'xaxis': {
                     'title': "Genre"
                 }
             }
         }, 
+
         {
             'data': [
                 Histogram(
@@ -120,7 +121,7 @@ def index():
                     'title': "Categories"
                 }
             }
-        }
+        } 
     ]
     
     # encode plotly graphs in JSON
