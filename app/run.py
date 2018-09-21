@@ -48,6 +48,9 @@ def index():
     related_category0 =[ df.loc[df['weather_related']==0].loc[df['genre']=='direct'].count()['message'], 
                          df.loc[df['weather_related']==0].loc[df['genre']=='news'].count()['message'], 
                          df.loc[df['weather_related']==0].loc[df['genre']=='social'].count()['message']]
+    
+    categories = df.columns[4:].tolist()
+    received_msgs = df.iloc[:, 4:].sum().tolist()
 
     
     # create visuals
@@ -95,6 +98,26 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        }, 
+        {
+            'data': [
+                Histogram(
+                    x = categories,
+                    y = received_msgs,
+                    histfunc = 'sum',
+                    marker = dict(color='green')
+                )                
+            ],
+
+            'layout': {
+                'title': "Histogram Chart Frequency of Categories of Messages",
+                'yaxis': {
+                    'title':"Message Category Frequency"
+                },
+                'xaxis': {
+                    'title': "Categories"
                 }
             }
         }
