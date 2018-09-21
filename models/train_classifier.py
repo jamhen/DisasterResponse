@@ -73,11 +73,13 @@ def evaluate_model(model, X_test, Y_test, category_names):
     print(classification_report(Y_test, y_pred, 
                                 target_names=category_names))
     # put test labels and predictions in pandas DataFrames
-    test_df = pd.DataFrame(y_test, columns=target_names)
-    preds_df = pd.DataFrame(y_pred, columns=target_names)
+    test_df = pd.DataFrame(Y_test, columns=category_names)
+    preds_df = pd.DataFrame(y_pred, columns=category_names)
     
     # print accuracy score for each category
-    for category in target_names:
+    print("Accuracy Score for each Category")
+    print("--------------------------------")    
+    for category in category_names:
         accuracy = accuracy_score(test_df[category], preds_df[category])
         print("Accuracy score for {}: {:.3f} ".format(category, accuracy))
     return
