@@ -11,6 +11,7 @@ from sqlalchemy import create_engine
 import re
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
+from nltk import pos_tag
 from nltk.stem import WordNetLemmatizer
 
 from sklearn.pipeline import Pipeline
@@ -64,7 +65,6 @@ def build_model():
 
     return model
 
-
 def evaluate_model(model, X_test, Y_test, category_names):
     # predict model performance  over test set
     y_pred = model.predict(X_test)
@@ -76,7 +76,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     
     # print accuracy score for each category
     print("Accuracy Score for each Category")
-    print("--------------------------------")    
+    print("--------------------------------")
     for category in category_names:
         accuracy = accuracy_score(test_df[category], preds_df[category])
         print("Accuracy score for {}: {:.3f} ".format(category, accuracy))
