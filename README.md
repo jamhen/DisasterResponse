@@ -16,6 +16,7 @@ Thus supervised machine learning based approaches would be of good assistance to
 * run.py: Run web app to analyse message and display predictions.
 * master.html: Web file to display results
 * go.html: Web file to display results.
+* results.png: Image of web page.
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
